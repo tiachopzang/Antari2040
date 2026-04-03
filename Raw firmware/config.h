@@ -15,7 +15,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
+#define RGB_MATRIX_LED_COUNT 12
+#define WS2812_DI_PIN GP0   // nếu LED không sáng thì đổi GP1/GP2
 
+#define DEBOUNCE 1
+#define USB_POLLING_INTERVAL_MS 1
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP25
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
